@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.button { @include buttonReset; }
+
+.border {
+  border: 1px solid $light-gray;
+}
+
+.transparentBlack { @include backgrounding(transparent, $black, 1px solid $black); }
+.transparentWhite { @include backgrounding(transparent, $white, 1px solid $white); }
+.black { @include backgrounding($black, $white); }
+.white { @include backgrounding($white, $black); }
+.darkGray { @include backgrounding($dark-gray, $white); }
+.lightGray { @include backgrounding($light-gray, $white); }
+.spaceCadet { @include backgrounding($space-cadet, $white); }
+.lightGreen { @include backgrounding($light-green, $black); }
+.darkGreen { @include backgrounding($dark-green, $white); }
+.skyBlue { @include backgrounding($sky-blue, $white); }
+.cyan { @include backgrounding($cyan, $white); }
+.blue { @include backgrounding($blue, $white); }
+.purpleNavi { @include backgrounding($purple-navi, $white); }
+.corn { @include backgrounding($corn, $black); }
+.honey { @include backgrounding($honey, $black); }
+.mango { @include backgrounding($mango, $black); }
+.rose { @include backgrounding($rose, $black); }
+.pink { @include backgrounding($pink, $white); }
